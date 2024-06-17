@@ -9,11 +9,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: project.tex
+          root_file: Espansione per la campagna.tex
         env:
           TEXINPUTS: ".:./lib//:"
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
           name: PDF
-          path: Espansione per la campagna Alberi del sigillo.pdf
+          path: Espansione per la campagna.pdf
