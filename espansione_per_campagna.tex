@@ -4,15 +4,20 @@
 \usepackage[italian]{babel}
 
 \usepackage[utf8]{inputenc}
-\usepackage[singlelinecheck=false]{caption}
 \usepackage{lipsum}
 \usepackage{listings}
 \usepackage{shortvrb}
 \usepackage{stfloats}
 \usepackage{datetime2}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\usepackage{array}
 
+\usepackage{tabularx}
+\usepackage{blindtext,booktabs}
+\usepackage{caption} % for '\caption*' macro
+\captionsetup{skip=1\baselineskip} % default is 1\baselineskip
 
-\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
 
 \title{Espansione per la campagna\\ \nomecampagna}
 \author{Matteo Scarpa - Fundor333}
@@ -26,6 +31,7 @@
 \frontmatter
 
 \maketitle
+
 \tableofcontents
 
 \mainmatter
@@ -34,5 +40,5 @@
 
 \input{classi/classi}
 
-
+\input{appendici/appendici}
 \end{document}
