@@ -12,24 +12,27 @@
 \usepackage{graphicx}
 \graphicspath{ {figures/} }
 \usepackage{array}
+\usepackage{titling}
 
 \usepackage{tabularx}
 \usepackage{blindtext,booktabs}
 \usepackage{caption} % for '\caption*' macro
-\captionsetup{skip=1\baselineskip} % default is 1\baselineskip
 
+\pretitle{\begin{center}\fontsize{18bp}{18bp}\selectfont}
+   \posttitle{\vspace{14bp}\par\includegraphics[width=170mm]{logo}\par\end{center}}
+\preauthor{\begin{center}\fontsize{14bp}{14bp}\selectfont}
+   \postauthor{\par\end{center}}
+\predate{\begin{center}}
+   \postdate{\par\end{center} }
 
 \title{Espansione per la campagna\\ \nomecampagna}
 \author{Matteo Scarpa - Fundor333}
 \date{\today}
 
+
 \include{utility/comandi}
 
 \begin{document}
-
-
-\frontmatter
-
 \maketitle
 
 \tableofcontents
